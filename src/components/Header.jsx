@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import logoSvg from '../assets/img/pizza-logo.svg';
+import logoSvg from '../assets/img/nike-logo.svg';
 import Button from './Button';
 
 function Header() {
@@ -13,10 +13,10 @@ function Header() {
       <div className='container'>
         <Link to='/'>
           <div className='header__logo'>
-            <img width='38' src={logoSvg} alt='Pizza logo' />
+            <img width='38' src={logoSvg} alt='Nike logo' />
             <div>
-              <h1>Pizza</h1>
-              <p>самая вкусная пицца во вселенной</p>
+              <h1>Nike</h1>
+              <p>Just do it.</p>
             </div>
           </div>
         </Link>
@@ -24,7 +24,7 @@ function Header() {
         <div className='header__cart'>
           <Link to='/cart'>
             <Button className='button--cart'>
-              <span>{totalPrice} сом</span>
+              <span>{totalPrice} $</span>
               <div className='button__delimiter'></div>
               <svg
                 width='18'
